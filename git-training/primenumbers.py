@@ -3,16 +3,17 @@
 import big_o
 
 def prime_numbers(n):
+    print('2\n3')
 
-    for a in range(2, n):
-        prime = True
+    def is_prime(x):
+        if x % 2 != 0 and x % 3 != 0 and x % 5 != 0:
+            return True
 
-        for b in range(2, a):
-            if a % b == 0:
-                prime = False
+    for i in range(5, n, 2):
+        if is_prime(n):
+            print(i)
 
-        if prime:
-            print(a)
+print(prime_numbers(n))
 
 # Asymptotic analysis
 
