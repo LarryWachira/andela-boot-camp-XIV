@@ -2,7 +2,6 @@
 
 
 class Car(object):
-    """A Car object."""
 
     speed = 0
 
