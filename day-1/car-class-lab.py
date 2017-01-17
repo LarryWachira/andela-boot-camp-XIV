@@ -17,7 +17,8 @@ class Car(object):
         else: self.num_of_wheels = 8
 
     def is_saloon(self):
-        return self.type == 'saloon'
+        if self.type == 'saloon':
+            return True
 
     def drive(self, n):
         if self.name == 'MAN':
