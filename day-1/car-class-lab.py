@@ -20,9 +20,9 @@ class Car(object):
     def is_saloon(self):
         return self.type == 'saloon'
 
-    def drive(self, func):
+    def drive(self, speed):
         if self.name == 'MAN':
             self.speed = 77
         else:
-            self.speed = 1000
+            self.speed = 10 ** speed
         return self
