@@ -2,6 +2,7 @@
 
 import big_o
 
+
 def prime_numbers(n):
     print('2\n3')
 
@@ -17,7 +18,7 @@ print(prime_numbers(n))
 
 # Asymptotic analysis
 
-positive_int_generator = lambda n: big_o.datagen.integers(n, 0, 10000)
+positive_int_generator = lambda n: big_o.datagen.n_(10000)
 best, others = big_o.big_o(prime_numbers, positive_int_generator, n_repeats=100)
 
 print(best)
