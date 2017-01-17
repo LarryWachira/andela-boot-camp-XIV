@@ -9,11 +9,15 @@ def is_prime(x):
 
 def prime_numbers(n):
 
-    print('2\n3')
-
-    for i in range(5, n, 2):
-        if is_prime(i):
-            print(i)
+    if n is 1: print('one is special')
+    elif n is 2: print("2")
+    elif n is 3: print('2\n3')
+    elif n is 5: print("2\n3\n5")
+    else:
+        print('2\n3\n5')
+        for i in range(7, n+1, 2):
+            if is_prime(i):
+                print(i)
 
 print(prime_numbers(100))
 
