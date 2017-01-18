@@ -14,7 +14,7 @@ if response.status_code == 200:
         if answer == info["number"]:
             print("Of course. Google, right? \n\n:( ")
         else:
-            print("Wrong! There are {} people in space right now.").format(info["number"])
+            print("Wrong! There are {} people in space right now.".format(info["number"]))
             print("\n That'll be one billion dollars. I'll take cash.")
 
     elif answer == 'N' or answer == 'n':
@@ -22,4 +22,4 @@ if response.status_code == 200:
 
     else: print("Seriously?")
 
-else: print("Server Unavailable")
+else: print("Error: {}\n\nPlease try again later.".format(response.status_code))
