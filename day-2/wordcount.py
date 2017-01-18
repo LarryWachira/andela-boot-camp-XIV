@@ -1,8 +1,8 @@
-def words(a):
-    b = a.split()
+def words(line):
+    a = line.split()
     split_words = []
 
-    for x in b:
+    for x in a:
         try:
             x2 = int(x)
             split_words.append(x2)
