@@ -15,3 +15,5 @@ def words(a):
 
 a = "testing 1 2 testing 1 2"
 print(words(a))
+b = 'testing one two testing one 2'
+print(words(b))
