@@ -8,11 +8,11 @@ if response.status_code == 200:
     answer = input('> ')
 
     if answer == 'Y' or answer == 'y':
-        print("Well, what are you waiting for? Guess how many humans are in space right now:\n> ")
-        answer = input()
+        print("Well, what are you waiting for? Guess how many humans are in space right now:")
+        answer = input('\n>')
 
         if int(answer) == info["number"]:
-            print("Of course. Google, right? \n\n:( ")
+            print("\nOf course. Google, right? \n\n:( ")
         else:
             print("Wrong! There are {} people in space right now.".format(info["number"]))
             print("\nThat'll be one billion dollars. I'll take cash.")
