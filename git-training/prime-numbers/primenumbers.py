@@ -18,8 +18,6 @@ def prime_numbers(n):
             for i in range(7, n+1, 2):
                 if is_prime(i):
                     print(i)
-    else:
-        return False
 
 print(prime_numbers(100))
 
